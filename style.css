@@ -1,0 +1,22 @@
+body{
+    background-color: grey;
+    position: relative;
+}
+.card{
+    
+    height: 100%;
+    width: 600px;
+    background-color: white;
+    align-content: center;
+
+}
+.intro{
+
+}
+.bottom-container{
+    background-color: aqua;
+    
+}
+.col-1, .col-2{
+    display: inline-block;
+}
