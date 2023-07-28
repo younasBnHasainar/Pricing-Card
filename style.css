@@ -1,22 +1,71 @@
+:root{
+    --common_padding: 40px;
+    --yellowish_green: rgb(210, 237, 0);
+    --highlighted-color: rgb(47, 214, 175);
+}
+html{
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
 body{
     background-color: grey;
     position: relative;
 }
 .card{
     
-    height: 100%;
-    width: 600px;
+    height: 500px;
+    width: 700px;
     background-color: white;
-    align-content: center;
+    border-radius: 10px;
 
 }
+
+
 .intro{
+    padding: var(--common_padding);
 
 }
+.intro h4{
+    color: var(--yellowish_green)
+}
+.intro h2{
+    color: var(--highlighted-color);
+}
+.intro p{
+    color:lightgray;
+    line-height: 25px;
+}
+
+
 .bottom-container{
-    background-color: aqua;
-    
+    background-color: var(--highlighted-color);
+    color: white;
+    /* border-radius: 10px; */
 }
 .col-1, .col-2{
     display: inline-block;
+    padding: var(--common_padding);
+
+}
+
+.col-1{
+ 
+}
+.col-1 .dollar{
+    font-size: 2rem;
+}
+.col-1 .unit{
+    opacity: 0.7;
+}
+.col-1 button{
+    background-color: var(--yellowish_green);
+    width: 200px;
+    padding: 10px;
+    border: none;
+    color: aliceblue;
+}
+.col-2{
+    opacity: 0.7;
+    line-height: 10px;
+    
 }
