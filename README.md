@@ -1,7 +1,7 @@
 # Pricing Card
 Buid Purpose: Learning Purpose - Front End - Challenge - Pricing Tag Design : [FrontEnd Mentor Challenge](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc)
 
-Design for price tags for various web pages. This can be easily imported according user needs it i s also flexible.
+Design for price tags for various web pages. Easily customisable according user needs and it is also flexible for changes.
 
 
 # Features:
@@ -9,21 +9,38 @@ Design for price tags for various web pages. This can be easily imported accordi
 * Easily deployable
 * Clean and readable
 
-# Expected learning outcome:
+<span style="color:purple">
+* Not mobile responsive
+</span>
+
+## Preview
+![Preview image of Pricing Card](<images/pricing card preview.png>)
+ ## Peronal Notes:
+ ### Expected learning outcome:
 * Decent css styling efficiency
 * Learn better use of position absolute and relative
-* Learn better use of lay outing
+* Learn better use of layouting
 
-
- # Output:
- ## Learnt css custom properties
+ ### Learnt css custom properties
  ```css
  :root{
     --common_padding: 40px;
     --yellowish_green: rgb(210, 237, 0);
     --highlighted-color: rgb(47, 214, 175);
 }
+
+.col-1{
+    background-color: var(--highlighted-color);
+    width: 50%;
+    height: 100%;
+}
  ```
+ ### Observations
+ * overflow property to hide if child breaks out from parent.
+ * inline-block display property(also inline) respects whitespaces
+ * transform property for exposing psuedo classes Ex: in button:hover
+ * list-style property to take of list tags
+ * box shadow and text shadow to  shadow your elemenents.
 
  
 
