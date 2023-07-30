@@ -39,7 +39,7 @@ Design for price tags for various web pages. Easily customisable according user 
  * overflow property to hide if child breaks out from parent.
  * inline-block display property(also inline) respects whitespaces
  * transform property for exposing psuedo classes Ex: in button:hover
- * list-style property to take of list tags
+ * list-style property to format list tags
  * box shadow and text shadow to  shadow your elemenents.
 
  
