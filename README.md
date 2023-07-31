@@ -8,10 +8,7 @@ Design for price tags for various web pages. Easily customisable according user 
 * Flexible
 * Easily deployable
 * Clean and readable
-
-<span style="color:purple">
-* Not mobile responsive
-</span>
+* Responsive 
 
 ## Preview
 ![Preview image of Pricing Card](<images/pricing card preview.png>)
