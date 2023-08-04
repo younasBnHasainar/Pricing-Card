@@ -26,22 +26,23 @@ body{
     background-color: aliceblue;
 
 }
-
+body, .card{
+    margin: 0;
+}
 
 .card{
-    max-width: 700px;
-    height: 550px;
+    width: 100%;
+    height: 100%; /* or auto*/
     box-shadow: 2px 3px 7px 0px rgba(0,0,0,0.35);
     background-color: white;
     border-radius: 5px;
     overflow: hidden;
-    margin: auto;
+    flex-wrap: wrap;
 }
 
 
 .intro{
-    width: 100%;
-    height: 45%;
+
     padding: var(--common_padding);
 }
 .intro h2{
@@ -61,24 +62,26 @@ body{
 
 .bottom-container{
     color: white;
-    height: 55%;
+
+    display: flex;
+    flex-direction: column; 
 }
 .col-1, .col-2{
-    display: inline-block;
-    vertical-align: top;
     padding: var(--common_padding);
 }
 .bottom-container h4{
     margin-bottom: 20px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 .col-1{
     background-color: var(--highlighted-color);
-    width: 50%;
-    height: 100%;
+
 }
 .col-1 .rate{
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
 }
 .col-1 .dollar{
     font-size: 2rem;
@@ -86,8 +89,7 @@ body{
 }
 .col-1 .unit{
     opacity: 0.7;
-    position: relative;
-    top: -3px;
+    align-self: center;
     font-size: 0.9rem;
 }
 .col-1 p{
@@ -96,11 +98,13 @@ body{
 
 .col-1 button{
     background-color: var(--yellowish_green);
-    width: 200px;
-    padding: 10px;
     border: none;
     color: aliceblue;
     border-radius: 5px;
+    height:45px;
+    width: 75%;
+    padding: 10px;
+    font-size: 1.3rem;
 }
 .col-1 button:hover{
     cursor: pointer;
@@ -110,55 +114,45 @@ body{
 
 .col-2{
     background-color: #32E3BA;
-    width: 50%;
-    height: 100%;
+
     font-size: 0.9rem;
+    line-height: 20px;
 }
 
-@media(max-width: 710px){
-    body, .card{
-        margin: 0;
-    }
+@media(min-width: 576px){
+
     .card{
-        width: 100%;
-        height: 100%; /* or auto*/
+        margin: auto;
+        margin-top: 10px;
+        max-width: 700px;
+        height: 800px;
     }
     .card, .intro, .col-1, .col-2{
         height: auto;
     }
     .intro{
-        width: 100vw;
+        
         padding: 30px;
     }
-
+    .bottom-container{
+        flex-direction: row;
+    }
     
     .bottom-container h4{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .col-1, .col-2{
-        display: block;
-        width: 100vw;
         padding: 30px;
         padding-bottom: 25px;
         font-weight: 700;
-    
+        flex-basis: 50% ;
     }
 
-
-    .col-1 p{
-        margin-bottom: 20px;
-    }
     .col-1 button{
-        height:45px;
-        width: 75%;
-        padding: 15px;
-        font-size: large;
-        /
-        
+        width: 200px;
+        padding: 10px;
+        font-size: 1.1rem;
     }
-    .col-2{
-        line-height: 20px;
-        
-    }
+
 }
